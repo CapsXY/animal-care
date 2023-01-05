@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.textshadow {
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.boxshadow {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+body {
+	@apply font-['Open_Sans'];
+}
+
+header {
+	@apply bg-[#7ACEFC] flex justify-between items-center p-2;
+}
+
+.main-logo {
+	@apply flex ml-20 w-[200px];
+}
+
+.contacts {
+	@apply font-bold flex flex-col pr-10 text-base;
+}
+
+.phones {
+	@apply flex justify-center gap-1;
+}
+
+.top-content {
+	@apply bg-[#E7FFDE] flex justify-center items-center h-screen gap-20;
+}
+
+.title {
+	@apply font-['Lilita_One'] text-[50px] text-[#171717] textshadow;
+}
+
+.sub-title {
+	@apply text-[24px];
+}
+
+.button {
+	@apply bg-[#F97570] uppercase rounded-[40px] text-[40px] text-white font-extrabold boxshadow px-10 py-1 hover:bg-[#FB4C45];
+}
+
+.bottom-content {
+	@apply bg-[#FFF2C6] flex h-screen justify-between pl-10;
+}
+
+.container-info {
+	@apply flex flex-col gap-10 pt-16;
+}
+
+.info {
+	@apply text-[40px] font-extrabold text-center;
+}
+
+.info :nth-child(2) {
+	@apply text-[#F97570];
+}
+
+.newsletter {
+	@apply text-center font-bold text-[20px];
+}
+
+.newsletter p {
+	@apply mb-2;
+}
+
+input {
+	@apply h-[50px] w-[400px] text-center rounded-tl-[10px] rounded-bl-[10px];
+}
+
+.container-email {
+	@apply flex justify-center;
+}
+
+.email {
+	@apply w-[50px] h-[50px] bg-[#171717] rounded-tr-[10px] rounded-br-[10px] hover:bg-[#F97570];
+}
+
+.email img {
+	@apply w-[30px] ml-2;
+}
+
+.photo {
+	@apply w-[439px] h-[565px] rounded-bl-[10px];
+}
+
+.footer {
+	@apply gap-2 h-[113px] bg-[#EDC15C] flex justify-center items-center text-[15px] font-bold;
+}
+
+.bottom-logo {
+	@apply w-[154px];
+}
