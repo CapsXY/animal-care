@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Animal Care - Forms</title>
+		<link rel="stylesheet" href="/dist/output.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
+		/>
+	</head>
+	<body class="bg-form">
+		<main class="form">
+			<img src="../images/animal-care.svg" />
+			<div class="form-container">
+				<span>Informe seus dados</span>
+				<!--! Proprietário -->
+				<span class="category">Informações pessoais</span>
+				<!-- Nome -->
+				<div class="input-container">
+					<input type="text" placeholder="Nome" />
+					<span class="msg-error">Este campo não está válido</span>
+				</div>
+				<!-- E-mail -->
+				<div class="input-container">
+					<input type="email" placeholder="E-mail" />
+					<span class="msg-error">Este campo não está válido</span>
+				</div>
+				<!-- Data de Nascimento -->
+				<div class="input-container">
+					<input type="date" placeholder="Data de nascimento" />
+					<span class="msg-error">Este campo não está válido</span>
+				</div>
+				<!-- Contato -->
+				<div class="input-container">
+					<input type="tel" placeholder="Contato" />
+					<span class="msg-error">Este campo não está válido</span>
+				</div>
+				<!--! Pet -->
+				<span class="category">Informações do seu pet</span>
+				<!-- Nome -->
+				<div class="input-container">
+					<input type="text" placeholder="Nome" />
+					<span class="msg-error">Este campo não está válido</span>
+				</div>
+				<!-- Idade -->
+				<div class="input-container">
+					<input
+						type="number"
+						placeholder="Idade (deixe em branco se não souber)"
+					/>
+				</div>
+				<!-- Categoria -->
+				<div class="input-container">
+					<input type="text" placeholder="Categoria (Cão, Gato, Hamster...)" />
+					<span class="msg-error">Este campo não está válido</span>
+				</div>
+				<!-- Endereço -->
+				<span class="category">Endereço</span>
+				<div class="input-container">
+					<input type="number" placeholder="CEP" />
+					<span class="msg-error">Este campo não está válido</span>
+				</div>
+				<!-- Logradouro -->
+				<div class="input-container">
+					<input type="text" placeholder="Logradouro" />
+					<span class="msg-error">Este campo não está válido</span>
+				</div>
+				<!-- Cidade -->
+				<div class="input-container">
+					<input type="text" placeholder="Cidade" />
+					<span class="msg-error">Este campo não está válido</span>
+				</div>
+				<!-- Estado -->
+				<div class="input-container">
+					<input type="text" placeholder="Estado" />
+					<span class="msg-error">Este campo não está válido</span>
+				</div>
+				<!--! Botão -->
+				<button class="button-enviar">
+					<a href="./thanks.html">Enviar</a>
+				</button>
+			</div>
+		</main>
+	</body>
+</html>
