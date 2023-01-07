@@ -5,30 +5,41 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Animal Care - Thanks!</title>
-		<link rel="stylesheet" href="/dist/output.css" />
+		<link rel="stylesheet" href="../css/style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
-		/>
+		<link	rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" />
+		<script src="https://cdn.tailwindcss.com"></script>
 	</head>
-	<body class="bg-finished">
-		<main class="h-screen flex flex-col justify-center items-center gap-10">
-			<div></div>
-			<div class="flex flex-col items-center">
-				<span class="text-[50px] uppercase font-extrabold"
-					>Cadastro concluído!</span
-				>
-				<p class="text-[20px]">
-					Aguarde pelo retorno de um de nossos atendentes.
-				</p>
-				<p>Fique atento ao telefone ou e-mail.</p>
+	<body class="bg-[var(--blue)] text-[var(--black)]">
+		<main class="flex flex-col justify-center items-center h-screen gap-10">
+			<div class="flex gap-10 justify-center">
+				<div class="flex flex-col items-center">
+					<span class="text-[50px] uppercase font-extrabold">
+						Cadastro concluído!
+					</span>
+					<p class="text-[20px]">Aguarde pelo retorno de um de nossos atendentes.</p>
+					<p>Fique atento ao telefone ou e-mail.</p>
+					<span class="text-[30px] text-[var(--darkyellow)] font-extrabold uppercase">
+						Obrigado pela colaboração!
+					</span>
+				</div>
+				<div class="stars">
+					<svg class="star-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41.2 45.3" style="enable-background:new 0 0 41.2 45.3;" xml:space="preserve">
+							<path d="M25.8,36.5l-8.7-3l8.7-3l3.1-8.3l3.1,8.3l8.7,3l-8.7,3l-3.1,8.3L25.8,36.5z" />
+					</svg>
+					<svg class="star-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41.2 45.3" style="enable-background:new 0 0 41.2 45.3;" xml:space="preserve">
+							<path d="M11.5,7.1L7.1,5.6l4.4-1.4L13,0l1.5,4.2l4.4,1.4l-4.4,1.4L13,11.3L11.5,7.1z" />
+					</svg>
+					<svg class="star-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41.2 45.3" style="enable-background:new 0 0 41.2 45.3;" xml:space="preserve">
+							<path d="M4.4,29.5L0,28.1l4.4-1.4l1.5-4.2l1.5,4.2l4.4,1.4l-4.4,1.4l-1.5,4.2L4.4,29.5z" />
+					</svg>
+				</div>
 			</div>
-			<span class="text-[30px] uppercase text-[#EDC15C] font-extrabold"
-				>Obrigado pela colaboração!</span
-			>
-			<button class="button-enviar"><a href="../index.html">Voltar</a></button>
+			<button id="hoverbtn" class="bg-[var(--red)] uppercase rounded-[40px] text-[20px] text-white font-extrabold boxshadow px-10 py-1">
+				<a href="../index.html">Voltar</a>
+			</button>
 		</main>
+		<script src="../js/script.js"></script>
 	</body>
 </html>

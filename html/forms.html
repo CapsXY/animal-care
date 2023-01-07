@@ -5,83 +5,78 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Animal Care - Forms</title>
-		<link rel="stylesheet" href="/dist/output.css" />
+		<link rel="stylesheet" href="../css/style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
-		/>
+		<link	rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" />
+		<script src="https://cdn.tailwindcss.com"></script>
 	</head>
-	<body class="bg-form">
-		<main class="form">
-			<img src="../images/animal-care.svg" />
-			<div class="form-container">
+	<body class="bg-[var(--green)] text-[var(--black)]">
+		<main class="flex flex-col items-center gap-6 p-10">
+			<img src="../images/logo.svg" />
+			<div class="bg-gray-100 flex flex-col items-center rounded w-[600px] gap-4 py-6 formshadow">
 				<span>Informe seus dados</span>
-				<!--! Proprietário -->
-				<span class="category">Informações pessoais</span>
+				<!-- INFORMAÇÕES PESSOAIS -->
+				<span class="flex justify-start w-full pl-12 font-bold uppercase">Informações pessoais</span>
 				<!-- Nome -->
-				<div class="input-container">
-					<input type="text" placeholder="Nome" />
-					<span class="msg-error">Este campo não está válido</span>
+				<div class="flex flex-col">
+					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="text" placeholder="Nome" />
+					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
 				</div>
 				<!-- E-mail -->
-				<div class="input-container">
-					<input type="email" placeholder="E-mail" />
-					<span class="msg-error">Este campo não está válido</span>
+				<div class="flex flex-col">
+					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="email" placeholder="E-mail" />
+					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
 				</div>
 				<!-- Data de Nascimento -->
-				<div class="input-container">
-					<input type="date" placeholder="Data de nascimento" />
-					<span class="msg-error">Este campo não está válido</span>
+				<div class="flex flex-col">
+					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="date" placeholder="Data de Nascimento" />
+					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
 				</div>
 				<!-- Contato -->
-				<div class="input-container">
-					<input type="tel" placeholder="Contato" />
-					<span class="msg-error">Este campo não está válido</span>
+				<div class="flex flex-col">
+					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="tel" placeholder="Contato" />
+					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
 				</div>
-				<!--! Pet -->
+				<!-- PET -->
 				<span class="category">Informações do seu pet</span>
 				<!-- Nome -->
-				<div class="input-container">
-					<input type="text" placeholder="Nome" />
-					<span class="msg-error">Este campo não está válido</span>
+				<div class="flex flex-col">
+					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="text" placeholder="Nome" />
+					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
 				</div>
 				<!-- Idade -->
-				<div class="input-container">
-					<input
-						type="number"
-						placeholder="Idade (deixe em branco se não souber)"
-					/>
+				<div class="flex flex-col">
+					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="number" placeholder="Idade (deixe em branco se não souber)" />
 				</div>
 				<!-- Categoria -->
-				<div class="input-container">
-					<input type="text" placeholder="Categoria (Cão, Gato, Hamster...)" />
-					<span class="msg-error">Este campo não está válido</span>
+				<div class="flex flex-col">
+					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="text" placeholder="Categoria (cão, gato, hamster...)" />
+					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
 				</div>
 				<!-- Endereço -->
 				<span class="category">Endereço</span>
-				<div class="input-container">
-					<input type="number" placeholder="CEP" />
-					<span class="msg-error">Este campo não está válido</span>
+				<div class="flex flex-col">
+					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="number" placeholder="CEP" />
+					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
 				</div>
 				<!-- Logradouro -->
-				<div class="input-container">
-					<input type="text" placeholder="Logradouro" />
-					<span class="msg-error">Este campo não está válido</span>
+				<div class="flex flex-col">
+					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="text" placeholder="Logradouro" />
+					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
 				</div>
 				<!-- Cidade -->
-				<div class="input-container">
-					<input type="text" placeholder="Cidade" />
-					<span class="msg-error">Este campo não está válido</span>
+				<div class="flex flex-col">
+					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="text" placeholder="Cidade" />
+					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
 				</div>
 				<!-- Estado -->
-				<div class="input-container">
-					<input type="text" placeholder="Estado" />
-					<span class="msg-error">Este campo não está válido</span>
+				<div class="flex flex-col">
+					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="text" placeholder="Estado" />
+					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
 				</div>
 				<!--! Botão -->
-				<button class="button-enviar">
+				<button id="hoverbtn" class="bg-[var(--red)] uppercase rounded-[40px] text-[20px] text-white font-extrabold boxshadow px-10 py-1">
 					<a href="./thanks.html">Enviar</a>
 				</button>
 			</div>

@@ -24,46 +24,52 @@
 	box-shadow: 0px 5px 10px #00000040;
 }
 
-/* Formulário */
+/* .position {
+	position: absolute;
+} */
 
-.bg-form {
-	@apply bg-[#E7FFDE] text-[#252525];
+.stars {
+	width: 70px;
+	position: relative;
+	transform-origin: center;
 }
 
-.form {
-	@apply flex flex-col items-center gap-6 p-10;
+.star-1 {
+	fill: var(--yellow);
+	animation: grow 0.8s cubic-bezier(0.42, 0, 0.275, 1.155) backwards infinite;
+	animation-delay: 1s;
+	transform-origin: center center;
+	margin-left: 10px;
 }
 
-.form-container {
-	@apply flex flex-col items-center bg-gray-100 rounded w-[600px] formshadow gap-4 py-6;
+.star-2 {
+	fill: var(--yellow);
+	animation: grow 0.8s cubic-bezier(0.42, 0, 0.275, 1.155) backwards infinite;
+	animation-delay: 1.5s;
+	transform-origin: center center;
+	margin-left: 10px;
 }
 
-.category {
-	@apply flex justify-start w-full pl-12 font-bold uppercase;
+.star-3 {
+	fill: var(--yellow);
+	animation: grow 0.8s cubic-bezier(0.42, 0, 0.275, 1.155) backwards infinite;
+	animation-delay: 2s;
+	transform-origin: center center;
+	margin-left: 10px;
 }
 
-.form-container span:nth-child(1) {
-	@apply text-2xl font-bold uppercase;
-}
+@keyframes grow {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, 0, 0);
+	}
 
-.input-container {
-	@apply flex flex-col;
-}
+	50% {
+		opacity: 1;
+	}
 
-.input-container input {
-	@apply h-[40px] w-[500px] pl-2 outline-none bg-gray-100 border-b;
-}
-
-.msg-error {
-	@apply hidden text-sm text-red-500;
-}
-
-.button-enviar {
-	@apply bg-[#F97570] uppercase rounded-[40px] text-[20px] text-white font-extrabold boxshadow px-10 py-1 hover:bg-[#FB4C45];
-}
-
-/* Finished */
-
-.bg-finished {
-	@apply bg-[#7ACEFC]
+	100% {
+		opacity: 0;
+		transform: translate3d(0, -10px, 0);
+	}
 }
