@@ -14,72 +14,86 @@
 	<body class="bg-[var(--green)] text-[var(--black)]">
 		<main class="flex flex-col items-center gap-6 p-10">
 			<img src="../images/logo.svg" />
-			<div class="bg-gray-100 flex flex-col items-center rounded w-[600px] gap-4 py-6 formshadow">
-				<span>Informe seus dados</span>
-				<!-- INFORMAÇÕES PESSOAIS -->
-				<span class="flex justify-start w-full pl-12 font-bold uppercase">Informações pessoais</span>
-				<!-- Nome -->
-				<div class="flex flex-col">
-					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="text" placeholder="Nome" />
-					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
+			<form action="./thanks.html" class="flex flex-col gap-4">
+				<fieldset class="bg-gray-100 flex flex-col items-center rounded w-[600px] gap-4 py-6 formshadow">
+					<span class="flex justify-center font-bold uppercase">Informe seus dados para contato</span>
+					<!-- INFORMAÇÕES PESSOAIS -->
+					<span class="flex justify-start w-full pl-12 font-bold">Informações pessoais</span>
+					<!-- Nome -->
+					<div class="flex flex-col relative">
+						<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b input" type="text" placeholder="Nome" required />
+						<label class="label" for="nome">Nome</label>
+						<span class="text-sm text-red-500 hidden">Este campo não está válido</span>
+					</div>
+					<!-- E-mail -->
+					<div class="flex flex-col relative">
+						<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b input" type="email" placeholder="E-mail" required />
+						<label class="label" for="nome">E-mail</label>
+						<span class="text-sm text-red-500 hidden">Este campo não está válido</span>
+					</div>
+					<!-- Data de Nascimento -->
+					<div class="flex flex-col relative">
+						<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b input" id="birth-date" type="date" placeholder="Data de Nascimento" required />
+						<label class="label" for="nome">Data de Nascimento</label>
+						<span class="text-sm text-red-500 hidden">Este campo não está válido</span>
+					</div>
+					<!-- Contato -->
+					<div class="flex flex-col relative">
+						<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b input" type="tel" placeholder="Contato" />
+						<label class="label" for="nome">Contato</label>
+						<span class="text-sm text-red-500 hidden">Este campo não está válido</span>
+					</div>
+					<!-- PET -->
+					<span class="flex justify-start w-full pl-12 font-bold">Informações do seu pet</span>
+					<!-- Nome -->
+					<div class="flex flex-col relative">
+						<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b input" type="text" placeholder="Nome" />
+						<label class="label" for="nome">Nome</label>
+						<span class="text-sm text-red-500 hidden">Este campo não está válido</span>
+					</div>
+					<!-- Idade -->
+					<div class="flex flex-col relative">
+						<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b input" type="number" placeholder="Idade (deixe em branco se não souber)" />
+						<label class="label" for="nome">Idade (deixe em branco se não souber)</label>
+					</div>
+					<!-- Categoria -->
+					<div class="flex flex-col relative">
+						<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b input" type="text" placeholder="Categoria (cão, gato, hamster...)" />
+						<label class="label" for="nome">Categoria (cão, gato, hamster...)</label>
+						<span class="text-sm text-red-500 hidden">Este campo não está válido</span>
+					</div>
+					<!-- Endereço -->
+					<span class="flex justify-start w-full pl-12 font-bold">Endereço</span>
+					<div class="flex flex-col relative">
+						<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b input" type="number" placeholder="CEP" />
+						<label class="label" for="nome">CEP</label>
+						<span class="text-sm text-red-500 hidden">Este campo não está válido</span>
+					</div>
+					<!-- Logradouro -->
+					<div class="flex flex-col relative">
+						<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b input" type="text" placeholder="Logradouro" />
+						<label class="label" for="nome">Logradouro</label>
+						<span class="text-sm text-red-500 hidden">Este campo não está válido</span>
+					</div>
+					<!-- Cidade -->
+					<div class="flex flex-col relative">
+						<input class="bg-gray-100 input h-[40px] w-[500px] pl-2 outline-none border-b input" type="text" placeholder="Cidade" />
+						<label class="label" for="nome">Cidade</label>
+						<span class="text-sm text-red-500 hidden">Este campo não está válido</span>
+					</div>
+					<!-- Estado -->
+					<div class="flex flex-col relative">
+						<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b input" type="text" placeholder="Estado" />
+						<label class="label" for="nome">Estado</label>
+						<span class="text-sm text-red-500 hidden">Este campo não está válido</span>
+					</div>
+					<!-- Botão -->
+				</fieldset>
+				<div class="flex justify-center">
+					<button id="hoverbtn" class="bg-[var(--red)] uppercase rounded-[40px] text-[20px] text-white font-extrabold boxshadow px-10 py-1">Enviar</button>
 				</div>
-				<!-- E-mail -->
-				<div class="flex flex-col">
-					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="email" placeholder="E-mail" />
-					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
-				</div>
-				<!-- Data de Nascimento -->
-				<div class="flex flex-col">
-					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="date" placeholder="Data de Nascimento" />
-					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
-				</div>
-				<!-- Contato -->
-				<div class="flex flex-col">
-					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="tel" placeholder="Contato" />
-					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
-				</div>
-				<!-- PET -->
-				<span class="category">Informações do seu pet</span>
-				<!-- Nome -->
-				<div class="flex flex-col">
-					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="text" placeholder="Nome" />
-					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
-				</div>
-				<!-- Idade -->
-				<div class="flex flex-col">
-					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="number" placeholder="Idade (deixe em branco se não souber)" />
-				</div>
-				<!-- Categoria -->
-				<div class="flex flex-col">
-					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="text" placeholder="Categoria (cão, gato, hamster...)" />
-					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
-				</div>
-				<!-- Endereço -->
-				<span class="category">Endereço</span>
-				<div class="flex flex-col">
-					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="number" placeholder="CEP" />
-					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
-				</div>
-				<!-- Logradouro -->
-				<div class="flex flex-col">
-					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="text" placeholder="Logradouro" />
-					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
-				</div>
-				<!-- Cidade -->
-				<div class="flex flex-col">
-					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="text" placeholder="Cidade" />
-					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
-				</div>
-				<!-- Estado -->
-				<div class="flex flex-col">
-					<input class="bg-gray-100 h-[40px] w-[500px] pl-2 outline-none border-b" type="text" placeholder="Estado" />
-					<span class="hidden text-sm text-red-500">Este campo não está válido</span>
-				</div>
-				<!--! Botão -->
-				<button id="hoverbtn" class="bg-[var(--red)] uppercase rounded-[40px] text-[20px] text-white font-extrabold boxshadow px-10 py-1">
-					<a href="./thanks.html">Enviar</a>
-				</button>
-			</div>
+			</form>
 		</main>
+		<script src="../js/script.js"></script>
 	</body>
 </html>

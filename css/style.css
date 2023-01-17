@@ -6,6 +6,7 @@
 	--yellow: #fff2c6;
 	--darkyellow: #edc15c;
 	--black: #171717;
+	--lightblack: #17171770;
 }
 
 #hoverbtn:hover {
@@ -23,10 +24,6 @@
 .formshadow {
 	box-shadow: 0px 5px 10px #00000040;
 }
-
-/* .position {
-	position: absolute;
-} */
 
 .stars {
 	width: 70px;
@@ -72,4 +69,25 @@
 		opacity: 0;
 		transform: translate3d(0, -10px, 0);
 	}
+}
+
+.input::placeholder {
+	visibility: hidden;
+}
+
+.label {
+position: absolute;
+top: 8px;
+left: 8px;
+font-size: 16px;
+color: var(--lightblack);
+}
+
+.input:not(:placeholder-shown) + .label {
+	position: absolute;
+	top: -4px;
+	left: 9px;
+	font-size: 10px;
+	transition: all .25s;
+	color: black;
 }
